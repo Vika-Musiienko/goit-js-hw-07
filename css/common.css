@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #212121;
+    line-height: 1.5;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    border: 1px solid #61677c;
+    border-radius: 4px;
+    width: 360px;
+   margin-bottom: 8px;
+   color: #2E2F42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  padding-left: 16px;
+  }
+  li.item{
+    border: none;
+  }
+  .categories {
+    display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 24px;
+  width: 392px;
+  }
+  
+  input {
+    padding: 8px;
+    font: inherit;
+  }
+  
+  .name-input {
+    width: 360px;
+    height: 40px;
+  }
+  .name-output{
+    color: #2E2F42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.96px;
+  }
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 80vw; */
+    margin-top: 50px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .gallery > li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    transition: all 250ms ease-in;
+    transform: scale(1);
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .gallery > li:not(:last-child) {
+    margin-right: 10px;
+  }
+  .gallery > li:hover {
+    z-index: 2;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    transition: all 250ms ease-in;
+    transform: scale(1.4);
+  }
+  
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .login-form {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form span {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .login-form input,
+  .login-form button {
+    width: 100%;
+    padding: 14px;
+    font: inherit;
+  }
+  .widget {
+    text-align: center;
+    margin: 100px 88px;
+  }
+
+  .widget p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #2E2F42;
+font-family: Montserrat;
+font-weight: 400;
+  }
+
+  .widget span {
+font-family: Montserrat;
+
+  }
+
+  .widget button {
+    padding: 8px 16px;
+    font-size: 20px;
+    cursor: pointer;
+border-radius: 8px;
+background: #4E75FF;
+border: none;
+color: #FFF;
+  }
+  .login-form {
+    margin: 0 auto;
+    padding: 3rem;
+    gap: 16px;
+    height: 600px;
+  border-radius: 8px;
+    background: #FFF;
+  }
+  
+  .login-form input {
+     border-radius: 4px;
+    border: 1px solid #808080;
+   display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2E2F42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; 
+  letter-spacing: 0.64px;
+  }
+  
+  .login-form button {
+    max-width: 86px;
+    border: none;
+    font-size: 16px;
+    font-family: 500;
+    border-radius: 8px;
+   
+    cursor: pointer;
+    outline: none;
+    align-self: flex-start;
+  background-color: #4E75FF;
+  color: #FFF;
+  }
+  .controls {
+    display: flex;
+    padding: 32px 32px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+    gap: 16px;
+    border-radius: 8px;
+    background: #F6F6FE;
+    width: 422px;
+    height: 40px;
+    align-items: baseline;
+  }
+  [type='number'] {
+   border-radius: 8px;
+    border: 1px solid #808080;
+    width: 6px;
+    padding: 8px 72px;
+    margin-left: 100px;
+  }
+  [type='button'] {
+    border: 1px solid #4E75FF;
+    border-radius: 8px;
+  background: #4E75FF;
+  width: 88px;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  padding: 8px 16px;
+  }
+  [type='button']:hover,
+  [type='button']:active {
+  background: #6C8CFF;
+  }
+  [type='button']:last-child{
+  background: #FF4E4E;
+  border: 1px solid #FF4E4E;
+  }
+  [type='button']:last-child:hover,
+  [type='button']:last-child:active {
+  background: #FF7070;
+  }
